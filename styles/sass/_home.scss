@@ -6,14 +6,14 @@
 	background-color: $bg-light;
 	margin-left: 100px;
 	padding-left:50px;
-	// padding-top: 70px;
+	padding-top: 70px;
 	padding-right: 40px;
 	position: relative;
 
 	.contactFloat {
 		position: fixed;
 		top: 25px;
-		right: 30px;
+		right: 35px;
 		z-index: 18;
 		background: $base-color;
 		border-radius: 50%;
@@ -28,8 +28,6 @@
 		align-items: center;
 		width: 50px;
 		height: 50px;
-		// -webkit-box-shadow: 3px 3px 3px teal;
-		// box-shadow: 3px 3px 3px $base-color;
 	}
 
 	.contactFloat i {
