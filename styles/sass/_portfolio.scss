@@ -1,0 +1,109 @@
+/* ------------------------------
+		 Works
+------------------------------ */
+.portfolio{
+    margin-left: 100px;
+	padding-left:50px;
+	padding-top: 70px;
+    padding-right: 40px;
+
+    .section-title p {
+		margin-top: .6rem;
+		margin-bottom: 1rem;
+	}
+
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    background-attachment: #f1f1f1;
+    margin-bottom: 1rem;
+
+    .image {
+        @include shadow;
+        position: relative;
+        overflow: hidden;
+        img {
+            height: 400px;
+            @include ease(0.6);
+        }
+        
+        h5 {
+            margin-top:-4rem;
+            margin-bottom:4rem;
+        }
+
+        .chat-box-h5 {
+            margin-top:-1.5rem;
+            margin-bottom:1rem;
+        }
+
+        &:hover{
+            img{
+                transform: scale(1.05);
+            }
+            .overly{
+                background-color: rgba($dark-color, 0.5);
+                opacity: 1;
+            }
+        }
+    }
+
+    .details {
+        padding: 2rem;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        p {
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+
+        ul {
+            margin-bottom: 1rem;
+            
+            li {
+                list-style-type: disc;
+                list-style-position: inside;
+            }
+        }
+
+    }
+
+    .details:hover,
+    .details:focus {
+        background-color: $bg-light;
+    }
+
+    
+}
+
+.project-card:nth-child(even) .image{
+    order: 2;
+}
+
+@media(max-width: 700px){
+    .project-card{
+        display: block;
+    }
+}
+
+div.details {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }

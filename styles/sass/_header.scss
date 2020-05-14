@@ -1,0 +1,267 @@
+/* ------------------------------
+		 Home
+------------------------------ */
+.home{
+	height: 100vh;
+	background-color: $bg-light;
+	margin-left: 100px;
+	padding-left:50px;
+	// padding-top: 70px;
+	padding-right: 40px;
+	position: relative;
+
+	.contactFloat {
+		position: fixed;
+		top: 25px;
+		right: 30px;
+		z-index: 18;
+		background: $base-color;
+		border-radius: 50%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		width: 50px;
+		height: 50px;
+		// -webkit-box-shadow: 3px 3px 3px teal;
+		// box-shadow: 3px 3px 3px $base-color;
+	}
+
+	.contactFloat i {
+		font-size: 1.8rem;
+		color: #fff;
+	}
+
+	// .calendly-badge-widget .calendly-badge-content {
+	// 	display: block;
+	// 	font-size: 16px;
+	// }
+
+	
+    .banner{
+		padding-top: 50px;
+
+        h6{
+			font-weight: $f-w-400;
+			letter-spacing: 1px;
+			// margin: 0;
+		}
+
+
+		.home-right {
+			position: absolute;
+			top: 12%;
+			right: 20%;
+
+			.btn-custom {
+				margin-top: 2rem;;
+			}		
+		}
+
+		h1 {
+			color: $dark-color-4;
+			font-weight: $f-w-800;
+			font-size: $f-b-h1;
+			margin-top: 10rem;
+
+			margin-bottom: 0rem;
+
+			& .lineBreak {
+				display: block;
+				color: $dark-color-4;
+				margin-left: 140px;
+				margin-top: 30px;
+			}
+		}
+		h2{
+			position: absolute;
+			bottom: 20%;
+			right: 31%;
+			font-weight: $f-w-800;
+			&.cd-headline {
+  				font-size:$f-s-h1;
+				font-weight: $f-w-800;
+				
+				&.clip span {
+  					padding: 0;
+				}
+				.cd-words-wrapper {
+					b{
+						font-weight: $f-w-800;
+					}
+					&:after {
+ 						background-color: transparent;
+					}
+				}
+			}
+		}
+
+		h2 {
+			// font-family: "Roboto", serif;
+			text-transform: uppercase;
+			font-size: 2.5rem;
+			font-weight: 700;
+			color: $dark-color-3;
+			margin-top: 29px;
+			display: inline-block;			
+    	}
+}
+
+.my-info{
+	width:100%;
+	display: flex;
+	position: absolute;
+	bottom: 30px; 
+	.item{
+		padding-right: 30px;
+		p:last-child{
+			font-size: 15px;
+		}
+	}
+}
+
+// Name 
+
+	.name{
+        position: relative;
+        padding-left:15px;
+        z-index: 1;
+        &:after{
+            @include after1(0px,-100px,50px,50px);
+            z-index: -1;
+        }
+	}
+	
+	.lineBreak{
+        position: relative;
+        padding-left:15px;
+        z-index: 1;
+        &:after{
+            @include after2(0px,-100px,50px,50px);
+            z-index: -1;
+        }
+    }
+
+// Message
+
+.message {
+    display: inline-flex;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    position: relative;
+    background-color: $base-color;
+    line-height: 24px;
+    border: 0;
+    color: $white-color;
+    font-size: $f-s-p;
+    font-weight:$f-w-500;
+    padding: 10px 24px;
+    text-transform: capitalize;
+    border-radius: 20px;
+    z-index: 1;
+    @include ease(0.3);
+    i{
+        margin-right: 8px;
+    }
+    .arrow_right{
+        margin-top: 6px;
+        margin-left: 5px;
+	}
+	
+	position: relative;
+	// box-shadow: 2px 2px 4px $base-color;
+}
+
+.message:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 15px;
+  top: 63px;
+  border: 13px solid;
+  border-color: $base-color transparent transparent $base-color;
+}
+
+// Scroll down begins
+	.scroll-down {
+	width: 80px;
+	height: 60px;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 10;
+	}
+
+	.scroll-down:before {
+	bottom: 20px;
+	width: 50px;
+	height: 50px;
+	}
+
+	.scroll-down:before, .scroll-down:after {
+	content: '';
+	display: block;
+	border-bottom: 3px solid $base-color;
+	border-right: 3px solid $base-color;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	}
+
+	.scroll-down:before {
+	-webkit-animation: scrollDown 0.5s infinite alternate;
+	-moz-animation: scrollDown 0.5s infinite alternate;
+	-o-animation: scrollDown 0.5s infinite alternate;
+	-ms-animation: scrollDown 0.5s infinite alternate;
+	animation: scrollDown 0.5s infinite alternate;
+	}
+
+	.scroll-down:after {
+	width: 30px;
+	height: 30px;
+	bottom: 30px;
+	-webkit-animation: scrollDown 0.5s infinite alternate;
+	-moz-animation: scrollDown 0.5s infinite alternate;
+	-o-animation: scrollDown 0.5s infinite alternate;
+	-ms-animation: scrollDown 0.5s infinite alternate;
+	animation: scrollDown 0.5s infinite alternate;
+	}
+
+	@keyframes scrollDown {
+	0% {
+		opacity: 1;
+		-webkit-transform: rotate(45deg) translate(0px);
+		-ms-transform: rotate(45deg) translate(0px);
+		transform: rotate(45deg) translate(0px);
+	}
+
+	100% {
+		opacity: 0.5;
+		-webkit-transform: rotate(45deg) translate(3px, 3px);
+		-ms-transform: rotate(45deg) translate(3px, 3px);
+		transform: rotate(45deg) translate(3px, 3px);
+	}
+	}
+
+	.scrollDown {
+	-webkit-animation-name: scrollDown;
+	animation-name: scrollDown;
+	}
+	// Scroll Down ends
+}
+
