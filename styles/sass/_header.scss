@@ -42,31 +42,25 @@
 
 	
     .banner{
-		padding-top: 50px;
+		// padding-top: 50px;
 
         h6{
 			font-weight: $f-w-400;
 			letter-spacing: 1px;
-			// margin: 0;
 		}
-
 
 		.home-right {
 			position: absolute;
-			top: 12%;
-			right: 20%;
-
-			.btn-custom {
-				margin-top: 2rem;;
-			}		
+			top: 14%;
+			right: 16%;	
 		}
 
 		h1 {
 			color: $dark-color-4;
 			font-weight: $f-w-800;
 			font-size: $f-b-h1;
+			margin-left: 3rem;
 			margin-top: 10rem;
-
 			margin-bottom: 0rem;
 
 			& .lineBreak {
@@ -76,36 +70,14 @@
 				margin-top: 30px;
 			}
 		}
-		h2{
-			position: absolute;
-			bottom: 20%;
-			right: 31%;
-			font-weight: $f-w-800;
-			&.cd-headline {
-  				font-size:$f-s-h1;
-				font-weight: $f-w-800;
-				
-				&.clip span {
-  					padding: 0;
-				}
-				.cd-words-wrapper {
-					b{
-						font-weight: $f-w-800;
-					}
-					&:after {
- 						background-color: transparent;
-					}
-				}
-			}
-		}
 
 		h2 {
-			// font-family: "Roboto", serif;
+			margin-left: 17rem;
+			margin-top: 4rem;
 			text-transform: uppercase;
 			font-size: 2.5rem;
 			font-weight: 700;
 			color: $dark-color-3;
-			margin-top: 29px;
 			display: inline-block;			
     	}
 }
@@ -124,29 +96,27 @@
 }
 
 // Name 
-
-	.name{
-        position: relative;
-        padding-left:15px;
-        z-index: 1;
-        &:after{
-            @include after1(0px,-100px,50px,50px);
-            z-index: -1;
-        }
+.name{
+	position: relative;
+	padding-left:15px;
+	z-index: 1;
+	&:after{
+		@include after1(0px,-100px,50px,50px);
+		z-index: -1;
 	}
-	
-	.lineBreak{
-        position: relative;
-        padding-left:15px;
-        z-index: 1;
-        &:after{
-            @include after2(0px,-100px,50px,50px);
-            z-index: -1;
-        }
-    }
+}
+
+.lineBreak{
+	position: relative;
+	padding-left:15px;
+	z-index: 1;
+	&:after{
+		@include after2(0px,-100px,50px,50px);
+		z-index: -1;
+	}
+}
 
 // Message
-
 .message {
     display: inline-flex;
     text-align: center;
@@ -173,7 +143,6 @@
 	}
 	
 	position: relative;
-	// box-shadow: 2px 2px 4px $base-color;
 }
 
 .message:before {

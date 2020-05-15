@@ -1020,6 +1020,7 @@ ul {
   background-color: #f8f9fb;
   margin-left: 100px;
   padding-left: 50px;
+  padding-top: 70px;
   padding-right: 40px;
   position: relative;
 }
@@ -1027,7 +1028,7 @@ ul {
 .home .contactFloat {
   position: fixed;
   top: 25px;
-  right: 30px;
+  right: 35px;
   z-index: 18;
   background: #f21e4e;
   border-radius: 50%;
@@ -1049,10 +1050,6 @@ ul {
   color: #fff;
 }
 
-.home .banner {
-  padding-top: 50px;
-}
-
 .home .banner h6 {
   font-weight: 400;
   letter-spacing: 1px;
@@ -1060,18 +1057,15 @@ ul {
 
 .home .banner .home-right {
   position: absolute;
-  top: 12%;
-  right: 20%;
-}
-
-.home .banner .home-right .btn-custom {
-  margin-top: 2rem;
+  top: 14%;
+  right: 16%;
 }
 
 .home .banner h1 {
   color: #666;
   font-weight: 800;
   font-size: 60px;
+  margin-left: 3rem;
   margin-top: 10rem;
   margin-bottom: 0rem;
 }
@@ -1084,35 +1078,12 @@ ul {
 }
 
 .home .banner h2 {
-  position: absolute;
-  bottom: 20%;
-  right: 31%;
-  font-weight: 800;
-}
-
-.home .banner h2.cd-headline {
-  font-size: 40px;
-  font-weight: 800;
-}
-
-.home .banner h2.cd-headline.clip span {
-  padding: 0;
-}
-
-.home .banner h2.cd-headline .cd-words-wrapper b {
-  font-weight: 800;
-}
-
-.home .banner h2.cd-headline .cd-words-wrapper:after {
-  background-color: transparent;
-}
-
-.home .banner h2 {
+  margin-left: 17rem;
+  margin-top: 4rem;
   text-transform: uppercase;
   font-size: 2.5rem;
   font-weight: 700;
   color: #555;
-  margin-top: 29px;
   display: inline-block;
 }
 
@@ -1758,4 +1729,81 @@ input, textarea {
   padding-right: 40px;
   text-align: center;
   border-top: 1px solid #e6e6e6;
+}
+
+@media screen and (max-width: 1250px) {
+  .home {
+    padding-top: 70px;
+  }
+  .home-right {
+    position: absolute;
+    top: -1%;
+    right: 10%;
+  }
+  .name-title .name {
+    position: relative;
+    padding-left: 15px;
+    z-index: 1;
+  }
+  .name-title .name:after {
+    position: absolute;
+    position: absolute;
+    content: "Bhagirthi";
+    color: rgba(242, 30, 78, 0.1);
+    font-weight: 800;
+    font-size: 6.5rem;
+    left: 0px;
+    top: -80px;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+  }
+  .name-title .lineBreak {
+    position: relative;
+    padding-left: 15px;
+    z-index: 1;
+  }
+  .name-title .lineBreak:after {
+    position: absolute;
+    content: "Jhamb";
+    color: rgba(242, 30, 78, 0.1);
+    font-weight: 800;
+    font-size: 6.5rem;
+    left: 0px;
+    top: -80px;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+  }
+  .home .banner h1 {
+    margin-left: 1rem;
+  }
+  .home .banner h1 .lineBreak {
+    margin-left: 6rem;
+  }
+  .home .banner h2 {
+    margin-left: 12rem;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .home-right {
+    position: absolute;
+    top: 2%;
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .home .banner h1 {
+    margin-left: 0rem;
+  }
+  .home .banner h1 .lineBreak {
+    margin-left: 3rem;
+  }
+  .home .banner h2 {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
 }

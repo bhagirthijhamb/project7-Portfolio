@@ -31,6 +31,17 @@
 	width:$width;
 	height:$height;
 }
+@mixin after3($left,$top,$width,$height){
+    position: absolute;
+	content:"Bhagirthi";
+	color: $light-b-color;
+	font-weight: 800;
+	font-size: 6.5rem;
+	left:$left;
+	top:$top;
+	width:$width;
+	height:$height;
+}
 
 @mixin after2($left,$top,$width,$height){
     position: absolute;
@@ -38,6 +49,17 @@
 	color: $light-b-color;
 	font-weight: 900;
 	font-size: 8rem;
+	left:$left;
+	top:$top;
+	width:$width;
+	height:$height;
+}
+@mixin after4($left,$top,$width,$height){
+    position: absolute;
+	content:"Jhamb";
+	color: $light-b-color;
+	font-weight: 800;
+	font-size: 6.5rem;
 	left:$left;
 	top:$top;
 	width:$width;
