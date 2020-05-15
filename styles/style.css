@@ -1264,29 +1264,33 @@ ul {
   margin-top: 2rem;
 }
 
-.about .about-left {
+.about .about-details .about-left {
   width: 35%;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
           box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
 
-.about .about-right {
+.about .about-details img {
+  width: 100%;
+}
+
+.about .about-details .about-right {
   width: 65%;
   margin-left: 1rem;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
           box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
 
-.about .about-right .details {
+.about .about-details .about-right .details {
   padding: 2rem;
 }
 
-.about .about-right .details p {
+.about .about-details .about-right .details p {
   margin: 1rem 0;
 }
 
-.about .about-right:hover,
-.about .about-right:focus {
+.about .about-details .about-right:hover,
+.about .about-details .about-right:focus {
   background-color: #f8f9fb;
 }
 
@@ -1429,12 +1433,6 @@ ul {
           order: 2;
 }
 
-@media (max-width: 700px) {
-  .project-card {
-    display: block;
-  }
-}
-
 div.details {
   position: relative;
   top: 50%;
@@ -1493,7 +1491,8 @@ div.details {
           box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
 
-.blog-section .blog-card .content h5 {
+.blog-section .blog-card .content h5 a {
+  color: #222222;
   text-transform: capitalize;
   line-height: 1.2;
   margin: .5rem 0;
@@ -1521,6 +1520,7 @@ div.details {
 
 .skillIconDiv {
   border-radius: 5px;
+  padding: .5rem;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
           box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
   display: -ms-grid;
@@ -1572,7 +1572,7 @@ div.details {
     -ms-grid-columns: minmax(100px, 1fr) [auto-fit];
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     margin: 0 auto;
-    width: calc(100% - 4rem);
+    width: calc(100% - 0rem);
   }
   .skillOverlay {
     background: rgba(255, 255, 255, 0.212);
@@ -1878,6 +1878,93 @@ input, textarea {
   .home .banner h2 {
     font-size: 2rem;
   }
+  div.details {
+    padding: 2rem;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .about .about-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .about-details .about-left {
+    width: 100%;
+  }
+  .about .about-details .about-right {
+    margin-top: 1rem;
+    width: 100%;
+    margin-left: 0rem;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+            box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  }
+  .about .about-details .about-right .details {
+    padding: 2rem;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .about .about-details .about-right .details p {
+    margin: 0;
+  }
+  .projects {
+    padding: 5px;
+  }
+  .project-card {
+    display: block;
+  }
+  .project-card .image {
+    padding-top: -2rem;
+  }
+  .project-card .image h5 {
+    margin-top: -4rem;
+    margin-bottom: 1rem;
+  }
+  .project-card .image .chat-box-h5 {
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+  }
+  .blog-section .blog-card {
+    margin-bottom: 10px;
+  }
+  .blog-section .blog-card .content {
+    margin: -70px 0px auto 0px;
+    line-height: 24px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+            box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  }
+  .blog-section .blog-card .content h5 a {
+    color: #222222;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin: .5rem 0;
+  }
+  .blog-section .blog-card .content a {
+    margin-top: .8rem;
+  }
+  .blog-section .blog-card .content:hover,
+  .blog-section .blog-card .content:focus {
+    background-color: #f8f9fb;
+  }
+  .skills {
+    padding-left: 5px;
+    padding-top: 40px;
+    padding-right: 5px;
+  }
+  .skills .section-title p {
+    margin-top: .6rem;
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 515px) {
@@ -1947,5 +2034,31 @@ input, textarea {
   .home-right .message:before {
     left: 12px;
     top: 54px;
+  }
+  .section {
+    padding: 40px 5px 0px 5px;
+  }
+  .section-title {
+    position: relative;
+    padding-left: 15px;
+    z-index: 1;
+  }
+  .section-title:after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: -20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(242, 30, 78, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+  }
+  .section-title h2 {
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  .section-title p {
+    text-transform: capitalize;
   }
 }

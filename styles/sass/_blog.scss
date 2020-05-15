@@ -43,7 +43,8 @@
 			background-color: $white-color;
 			@include shadow;
 			
-			h5{
+			h5 a{
+                color: $dark-color;
 				text-transform: capitalize;
                 line-height: 1.2;
                 margin: .5rem 0;
@@ -55,9 +56,9 @@
         }	
         
         .content:hover,
-    .content:focus {
-        background-color: $bg-light;
-    }
+        .content:focus {
+            background-color: $bg-light;
+        }
     }
 
     

@@ -11,6 +11,7 @@
 
 .skillIconDiv {
     border-radius: $rd-round;
+    padding: .5rem;
     @include shadow;
     display: -ms-grid;
     display: grid;
@@ -61,7 +62,8 @@
     -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     margin: 0 auto;
-    width: calc(100% - 4rem);
+    // width: calc(100% - 4rem);
+    width: calc(100% - 0rem);
   }
   .skillOverlay {
     background: rgba(255, 255, 255, 0.212);

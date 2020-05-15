@@ -2,7 +2,7 @@
 		 About  
 ------------------------------ */
 .about{
-	padding-left:50px;
+	padding-left: 50px;
 	padding-top: 70px;
     padding-right: 40px;
 
@@ -14,33 +14,38 @@
     .about-details {
         width: 100%;
         display: flex;
-        margin-top: 2rem;;
-    }
-    
+        margin-top: 2rem;
 
-    .about-left {
-        width: 35%;
-        @include shadow;
-    }
+        .about-left {
+            width: 35%;
+            @include shadow;
+        }
 
-    .about-right {
-        width: 65%;
-        margin-left: 1rem;
-        @include shadow;
-        
-        .details {
-            padding: 2rem;
+        img {
+            width: 100%;
+        }
+
+        .about-right {
+            width: 65%;
+            margin-left: 1rem;
+            @include shadow;
             
-            p {
-                margin: 1rem 0;
+            .details {
+                padding: 2rem;
+                
+                p {
+                    margin: 1rem 0;
+                }
             }
         }
-    }
 
-    .about-right:hover,
-    .about-right:focus {
-        background-color: $bg-light;
-    }
+        .about-right:hover,
+        .about-right:focus {
+            background-color: $bg-light;
+        }
+    }    
+
+    
 
 	.hero{
 		border:1px solid $bg-light;

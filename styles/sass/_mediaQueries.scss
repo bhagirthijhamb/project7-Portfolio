@@ -141,6 +141,112 @@
     .home .banner h2 {	
         font-size: 2rem;	
     }
+
+    // Global
+     div.details {
+                    padding: 2rem;
+                    position: relative;
+                    top: 50%;
+                    -webkit-transform: translateY(0);
+                    transform: translateY(0);
+         }
+
+    // About
+    .about {         
+        .about-details {
+            display: flex;
+            flex-direction: column;
+
+            .about-left {
+                width: 100%;
+            }
+            .about-right {
+                margin-top: 1rem;
+                width: 100%;
+                margin-left: 0rem;
+                @include shadow;
+                
+                .details {
+                    padding: 2rem;
+                    position: relative;
+                    top: 50%;
+                    -webkit-transform: translateY(0);
+                    transform: translateY(0);
+                
+                    
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    // Portfolio
+    .projects {
+        padding: 5px;
+    }
+    .project-card{
+        display: block;
+
+        .image {
+            padding-top: -2rem;
+            h5 {
+                margin-top:-4rem;
+                margin-bottom:1rem;
+            }
+
+            .chat-box-h5 {
+                margin-top:-1.5rem;
+                margin-bottom:1rem;
+            }            
+        }
+    }
+
+    // BLog
+    .blog-section .blog-card {
+        margin-bottom:10px;
+        
+        .content{
+            margin: -70px 0px auto 0px;
+            line-height: 24px;
+			padding: 10px 20px;
+			border-radius:$rd-round;
+			background-color: $white-color;
+			@include shadow;
+			
+			h5 a{
+                color: $dark-color;
+				text-transform: capitalize;
+                line-height: 1.2;
+                margin: .5rem 0;
+            }
+            
+            a{
+                margin-top: .8rem;
+            }
+        }	
+        
+        .content:hover,
+        .content:focus {
+            background-color: $bg-light;
+        }
+    }
+
+    // Skills
+    .skills {
+        padding-left:5px;
+        padding-top: 40px;
+        padding-right: 5px;
+
+        .section-title p {
+            margin-top: .6rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+
 }
 
 @media screen and (max-width: 515px){
@@ -211,6 +317,28 @@
             top: 54px;
         }
     }
+
+    .section{
+    padding:40px 5px 0px 5px;
+    &-title{
+        position: relative;
+        padding-left:15px;
+        z-index: 1;
+        &:after{
+            @include after(0px,-20px,60px,60px);
+            background-color:$light-b-color;
+            border-radius: $rd-circle;
+            z-index: -1;
+        }
+        h2{
+            text-transform:capitalize;
+            font-weight: $f-w-700;
+        }
+        p{
+            text-transform: capitalize;
+        }
+    }
+}
 
     
 }

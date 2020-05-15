@@ -80,7 +80,6 @@
                 list-style-position: inside;
             }
         }
-
     }
 
     .details:hover,
@@ -93,12 +92,6 @@
 
 .project-card:nth-child(even) .image{
     order: 2;
-}
-
-@media(max-width: 700px){
-    .project-card{
-        display: block;
-    }
 }
 
 div.details {
