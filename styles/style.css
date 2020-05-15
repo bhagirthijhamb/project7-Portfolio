@@ -1016,9 +1016,9 @@ ul {
 		 Home
 ------------------------------ */
 .home {
+  min-width: 350px;
   height: 100vh;
   background-color: #f8f9fb;
-  margin-left: 100px;
   padding-left: 50px;
   padding-top: 70px;
   padding-right: 40px;
@@ -1050,15 +1050,15 @@ ul {
   color: #fff;
 }
 
+.home .home-right {
+  position: absolute;
+  top: 13%;
+  right: 15%;
+}
+
 .home .banner h6 {
   font-weight: 400;
   letter-spacing: 1px;
-}
-
-.home .banner .home-right {
-  position: absolute;
-  top: 14%;
-  right: 16%;
 }
 
 .home .banner h1 {
@@ -1085,23 +1085,6 @@ ul {
   font-weight: 700;
   color: #555;
   display: inline-block;
-}
-
-.home .my-info {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  bottom: 30px;
-}
-
-.home .my-info .item {
-  padding-right: 30px;
-}
-
-.home .my-info .item p:last-child {
-  font-size: 15px;
 }
 
 .home .name {
@@ -1189,7 +1172,7 @@ ul {
   width: 80px;
   height: 60px;
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   left: 0;
   right: 0;
   margin: auto;
@@ -1263,7 +1246,6 @@ ul {
 		 About  
 ------------------------------ */
 .about {
-  margin-left: 100px;
   padding-left: 50px;
   padding-top: 70px;
   padding-right: 40px;
@@ -1333,7 +1315,6 @@ ul {
 		 Works
 ------------------------------ */
 .portfolio {
-  margin-left: 100px;
   padding-left: 50px;
   padding-top: 70px;
   padding-right: 40px;
@@ -1465,7 +1446,6 @@ div.details {
 		Blog 
 --------------------------------- */
 .blog-section {
-  margin-left: 100px;
   padding-left: 50px;
   padding-top: 70px;
   padding-right: 40px;
@@ -1529,7 +1509,6 @@ div.details {
 }
 
 .skills {
-  margin-left: 100px;
   padding-left: 50px;
   padding-top: 70px;
   padding-right: 40px;
@@ -1613,7 +1592,6 @@ div.details {
 }
 
 .contact-section {
-  margin-left: 100px;
   padding-left: 50px;
   padding-top: 70px;
   padding-right: 40px;
@@ -1722,7 +1700,6 @@ input, textarea {
 }
 
 .footer {
-  margin-left: 100px;
   padding-left: 50px;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -1735,9 +1712,9 @@ input, textarea {
   .home {
     padding-top: 70px;
   }
-  .home-right {
+  .home .banner .home-right {
     position: absolute;
-    top: -1%;
+    top: 10%;
     right: 10%;
   }
   .name-title .name {
@@ -1782,6 +1759,7 @@ input, textarea {
     margin-left: 6rem;
   }
   .home .banner h2 {
+    font-size: 2.3rem;
     margin-left: 12rem;
     margin-top: 3rem;
   }
@@ -1805,5 +1783,169 @@ input, textarea {
   .home .banner h2 {
     margin-left: 2rem;
     margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .home {
+    padding-left: 10px;
+  }
+  .header-left {
+    -webkit-transform: translateX(-120px);
+            transform: translateX(-120px);
+  }
+  .header-left .logo,
+  .header-left .btn-share {
+    display: none;
+  }
+  .header-left .main-menu {
+    height: 100%;
+    width: 100%;
+    -webkit-transform: rotate(0deg) translateX(0%);
+            transform: rotate(0deg) translateX(0%);
+    background-color: #ffffff;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-left .main-menu .cross {
+    display: block;
+  }
+  .header-left .main-menu .menu-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-left .main-menu .menu-nav .nav-link {
+    padding: 15px 0;
+    line-height: 1.5;
+  }
+  .header-left .main-menu .menu-nav .nav-link.active:after, .header-left .main-menu .menu-nav .nav-link:hover:after {
+    bottom: 0;
+  }
+  .main {
+    margin-left: 0;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .name-title .name {
+    position: relative;
+    padding-left: 15px;
+    z-index: 1;
+  }
+  .name-title .name:after {
+    position: absolute;
+    position: absolute;
+    content: "Bhagirthi";
+    color: rgba(242, 30, 78, 0.1);
+    font-weight: 800;
+    font-size: 5.5rem;
+    left: 0px;
+    top: -60px;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+  }
+  .name-title .lineBreak {
+    position: relative;
+    padding-left: 15px;
+    z-index: 1;
+  }
+  .name-title .lineBreak:after {
+    position: absolute;
+    content: "Jhamb";
+    color: rgba(242, 30, 78, 0.1);
+    font-weight: 800;
+    font-size: 5.5rem;
+    left: 0px;
+    top: -60px;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+  }
+  .home .banner h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .home .banner h1 {
+    font-size: 2.8rem;
+  }
+  .home .banner h1 .lineBreak {
+    margin-left: 50px;
+    margin-top: 12px;
+  }
+  .home .banner h2 {
+    font-size: 1.5rem;
+  }
+  .name-title .name {
+    position: relative;
+    padding-left: 15px;
+    z-index: 1;
+  }
+  .name-title .name:after {
+    position: absolute;
+    position: absolute;
+    content: "Bhagirthi";
+    color: rgba(242, 30, 78, 0.1);
+    font-weight: 800;
+    font-size: 4rem;
+    left: 0px;
+    top: -45px;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+  }
+  .name-title .lineBreak {
+    position: relative;
+    padding-left: 15px;
+    z-index: 1;
+  }
+  .name-title .lineBreak:after {
+    position: absolute;
+    content: "Jhamb";
+    color: rgba(242, 30, 78, 0.1);
+    font-weight: 800;
+    font-size: 4rem;
+    left: 0px;
+    top: -45px;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+  }
+  .home {
+    padding-top: 70px;
+  }
+  .home .banner .home-right {
+    position: absolute;
+    top: 18%;
+    right: 1%;
+  }
+  .home .scroll-down {
+    bottom: 50px;
+  }
+  .home-right .message {
+    padding: 8px 15px;
+  }
+  .home-right .message p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .home-right .message:before {
+    left: 12px;
+    top: 54px;
   }
 }

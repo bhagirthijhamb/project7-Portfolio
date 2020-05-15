@@ -2,13 +2,14 @@
 		 Home
 ------------------------------ */
 .home{
+	min-width: 350px;
 	height: 100vh;
 	background-color: $bg-light;
-	margin-left: 100px;
 	padding-left:50px;
 	padding-top: 70px;
 	padding-right: 40px;
 	position: relative;
+	
 
 	.contactFloat {
 		position: fixed;
@@ -40,20 +41,17 @@
 	// 	font-size: 16px;
 	// }
 
+	.home-right {
+		position: absolute;
+		top: 13%;
+		right: 15%;	
+	}
 	
     .banner{
-		// padding-top: 50px;
-
         h6{
 			font-weight: $f-w-400;
 			letter-spacing: 1px;
-		}
-
-		.home-right {
-			position: absolute;
-			top: 14%;
-			right: 16%;	
-		}
+		}		
 
 		h1 {
 			color: $dark-color-4;
@@ -61,7 +59,7 @@
 			font-size: $f-b-h1;
 			margin-left: 3rem;
 			margin-top: 10rem;
-			margin-bottom: 0rem;
+			margin-bottom: 0rem;			
 
 			& .lineBreak {
 				display: block;
@@ -69,7 +67,7 @@
 				margin-left: 140px;
 				margin-top: 30px;
 			}
-		}
+		}	
 
 		h2 {
 			margin-left: 17rem;
@@ -81,19 +79,23 @@
 			display: inline-block;			
     	}
 }
+	// .message-text {
+    //     font-size: 1rem;
+    // }
 
-.my-info{
-	width:100%;
-	display: flex;
-	position: absolute;
-	bottom: 30px; 
-	.item{
-		padding-right: 30px;
-		p:last-child{
-			font-size: 15px;
-		}
-	}
-}
+
+// .my-info{
+// 	width:100%;
+// 	display: flex;
+// 	position: absolute;
+// 	bottom: 30px; 
+// 	.item{
+// 		padding-right: 30px;
+// 		p:last-child{
+// 			font-size: 15px;
+// 		}
+// 	}
+// }
 
 // Name 
 .name{
@@ -161,7 +163,7 @@
 	width: 80px;
 	height: 60px;
 	position: absolute;
-	bottom: 20px;
+	bottom: 30px;
 	left: 0;
 	right: 0;
 	margin: auto;

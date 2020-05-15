@@ -66,6 +66,51 @@
 	height:$height;
 }
 
+@mixin after5($left,$top,$width,$height){
+    position: absolute;
+	content:"Bhagirthi";
+	color: $light-b-color;
+	font-weight: 800;
+	font-size: 5.5rem;
+	left:$left;
+	top:$top;
+	width:$width;
+	height:$height;
+}
+@mixin after6($left,$top,$width,$height){
+    position: absolute;
+	content:"Jhamb";
+	color: $light-b-color;
+	font-weight: 800;
+	font-size: 5.5rem;
+	left:$left;
+	top:$top;
+	width:$width;
+	height:$height;
+}
+@mixin after7($left,$top,$width,$height){
+    position: absolute;
+	content:"Bhagirthi";
+	color: $light-b-color;
+	font-weight: 800;
+	font-size: 4rem;
+	left:$left;
+	top:$top;
+	width:$width;
+	height:$height;
+}
+@mixin after8($left,$top,$width,$height){
+    position: absolute;
+	content:"Jhamb";
+	color: $light-b-color;
+	font-weight: 800;
+	font-size: 4rem;
+	left:$left;
+	top:$top;
+	width:$width;
+	height:$height;
+}
+
 @mixin social-media(){
   	ul li:not(:last-child){
 		padding-right: 15px;
