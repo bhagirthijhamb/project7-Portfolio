@@ -184,13 +184,27 @@
     }
 
     // Portfolio
+
+    .portfolio{
+       
+	padding: 0;
+
+    .section-title p {
+		margin-top: .6rem;
+		margin-bottom: 1rem;
+	}
+
+}
     .projects {
-        padding: 5px;
+        padding: 0;
     }
     .project-card{
+        overflow: hidden;
         display: block;
+        grid-gap: 0rem;
 
         .image {
+            overflow: hidden;
             padding-top: -2rem;
             h5 {
                 margin-top:-4rem;
@@ -198,9 +212,14 @@
             }
 
             .chat-box-h5 {
+
                 margin-top:-1.5rem;
                 margin-bottom:1rem;
             }            
+        }
+        .details {
+            overflow: hidden;
+            padding: 1rem;
         }
     }
 
@@ -245,6 +264,11 @@
             margin-bottom: 1rem;
         }
     }
+
+    .btn-custom {
+    line-height: 20px;
+    padding: 9px 15px;
+}
 
 
 }

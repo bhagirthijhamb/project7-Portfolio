@@ -971,7 +971,8 @@ ul {
 }
 
 .menu-toggle {
-  right: 40px;
+  cursor: pointer;
+  right: 20px;
   top: 30px;
   z-index: 999;
   text-align: center;
@@ -1371,6 +1372,7 @@ ul {
 }
 
 .project-card .image h5 {
+  font-size: .9rem;
   margin-top: -4rem;
   margin-bottom: 4rem;
 }
@@ -1914,13 +1916,23 @@ input, textarea {
   .about .about-details .about-right .details p {
     margin: 0;
   }
+  .portfolio {
+    padding: 0;
+  }
+  .portfolio .section-title p {
+    margin-top: .6rem;
+    margin-bottom: 1rem;
+  }
   .projects {
-    padding: 5px;
+    padding: 0;
   }
   .project-card {
+    overflow: hidden;
     display: block;
+    grid-gap: 0rem;
   }
   .project-card .image {
+    overflow: hidden;
     padding-top: -2rem;
   }
   .project-card .image h5 {
@@ -1930,6 +1942,10 @@ input, textarea {
   .project-card .image .chat-box-h5 {
     margin-top: -1.5rem;
     margin-bottom: 1rem;
+  }
+  .project-card .details {
+    overflow: hidden;
+    padding: 1rem;
   }
   .blog-section .blog-card {
     margin-bottom: 10px;
@@ -1964,6 +1980,10 @@ input, textarea {
   .skills .section-title p {
     margin-top: .6rem;
     margin-bottom: 1rem;
+  }
+  .btn-custom {
+    line-height: 20px;
+    padding: 9px 15px;
   }
 }
 
