@@ -83,6 +83,23 @@
 	background-color: $bg-light;
 }
 
+.email-address {
+	margin-top: 2rem;
+	font-size: 1.2rem;
+	color: $base-color;
+	display: inline-block;
+
+	&:hover,
+	&:focus {
+		// text-decoration: underline;
+		border-bottom: 1px solid $base-color;
+		padding-bottom: 4px;
+		transition: border-bottom 3s ease;
+	}
+}
+
+
+
 input, textarea {
 	width: 100%;
 }

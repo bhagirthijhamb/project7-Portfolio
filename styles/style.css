@@ -1144,8 +1144,7 @@ ul {
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
-  padding: 10px 24px;
-  text-transform: capitalize;
+  padding: 11px 24px;
   border-radius: 20px;
   z-index: 1;
   -webkit-transition: all 0.3s ease;
@@ -1168,7 +1167,7 @@ ul {
   width: 0;
   height: 0;
   left: 15px;
-  top: 63px;
+  top: 60px;
   border: 13px solid;
   border-color: #f21e4e transparent transparent #f21e4e;
 }
@@ -1701,6 +1700,20 @@ div.details {
   background-color: #f8f9fb;
 }
 
+.email-address {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #f21e4e;
+  display: inline-block;
+}
+
+.email-address:hover, .email-address:focus {
+  border-bottom: 1px solid #f21e4e;
+  padding-bottom: 4px;
+  -webkit-transition: border-bottom 3s ease;
+  transition: border-bottom 3s ease;
+}
+
 input, textarea {
   width: 100%;
 }
@@ -1830,12 +1843,11 @@ input, textarea {
     padding: 0;
   }
   .project-card {
-    overflow: hidden;
     display: block;
     grid-gap: 0rem;
   }
   .project-card .image {
-    overflow: hidden;
+    margin-bottom: 10rem;
     padding-top: -2rem;
   }
   .project-card .image h5 {
@@ -1846,8 +1858,11 @@ input, textarea {
     margin-top: -1.5rem;
     margin-bottom: 1rem;
   }
+  .project-card .image-chatbox {
+    margin-bottom: 14rem;
+  }
   .project-card .details {
-    overflow: hidden;
+    margin-top: 9rem;
     padding: 1rem;
   }
 }

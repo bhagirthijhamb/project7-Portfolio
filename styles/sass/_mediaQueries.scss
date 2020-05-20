@@ -119,12 +119,13 @@
         padding: 0;
     }
     .project-card{
-        overflow: hidden;
+        // overflow: hidden;
         display: block;
         grid-gap: 0rem;
 
         .image {
-            overflow: hidden;
+            margin-bottom: 10rem;
+            // overflow: hidden;
             padding-top: -2rem;
             h5 {
                 margin-top:-4rem;
@@ -132,14 +133,19 @@
             }
 
             .chat-box-h5 {
-
                 margin-top:-1.5rem;
-                margin-bottom:1rem;
+                margin-bottom: 1rem;
             }            
         }
+
+        .image-chatbox {
+            margin-bottom: 14rem;
+        }
         .details {
-            overflow: hidden;
+            margin-top: 9rem;
+            // overflow: hidden;
             padding: 1rem;
+
         }
     }
         
