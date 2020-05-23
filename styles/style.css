@@ -1270,7 +1270,6 @@ ul {
 
 .about .about-details .about-left {
   width: 40%;
-  min-width: 420px;
   min-height: 320px;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
           box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
@@ -1834,7 +1833,12 @@ input, textarea {
   .about .about-details .about-right .details p {
     margin: 0;
   }
+  .about .about-details .about-right .details a {
+    margin-top: .7rem;
+  }
   .portfolio {
+    margin-top: 6rem;
+    padding-top: 70px;
     padding: 0;
   }
   .portfolio .section-title p {
@@ -1842,16 +1846,15 @@ input, textarea {
     margin-bottom: 1rem;
   }
   .projects {
-    padding: 0;
+    padding-top: 2rem;
   }
   .project-card {
-    overflow: hidden;
+    margin-top: -2rem;
     display: block;
     grid-gap: 0rem;
   }
   .project-card .image {
-    margin-bottom: 10rem;
-    overflow: hidden;
+    margin-bottom: 12rem;
     padding-top: -2rem;
   }
   .project-card .image h5 {
@@ -1863,12 +1866,27 @@ input, textarea {
     margin-bottom: 1rem;
   }
   .project-card .image-chatbox {
-    margin-bottom: 14rem;
+    margin-bottom: 12rem;
   }
   .project-card .details {
     margin-top: 9rem;
-    overflow: hidden;
     padding: 1rem;
+  }
+  @-moz-document url-prefix() {
+    .project-card .image {
+      margin-bottom: 12rem;
+    }
+    .project-card .image-chatbox {
+      margin-bottom: 4rem;
+    }
+    .project-card .details {
+      margin-top: 11rem;
+      overflow: hidden;
+      padding: 1rem;
+    }
+  }
+  .blog-section {
+    margin-top: -8rem;
   }
 }
 
@@ -1974,6 +1992,58 @@ input, textarea {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+  .portfolio {
+    margin-top: 6rem;
+    padding-top: 70px;
+    padding: 0;
+  }
+  .portfolio .section-title p {
+    margin-top: .6rem;
+    margin-bottom: 1rem;
+  }
+  .projects {
+    padding-top: 2rem;
+  }
+  .project-card {
+    margin-top: 1rem;
+    display: block;
+    grid-gap: 0rem;
+  }
+  .project-card .image {
+    margin-bottom: 1rem;
+    padding-top: -2rem;
+  }
+  .project-card .image h5 {
+    margin-top: -4rem;
+    margin-bottom: 1rem;
+  }
+  .project-card .image .chat-box-h5 {
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+  }
+  .project-card .image-chatbox {
+    margin-bottom: 12rem;
+  }
+  .project-card .details {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  @-moz-document url-prefix() {
+    .project-card .image {
+      margin-bottom: 2rem;
+    }
+    .project-card .image-chatbox {
+      margin-bottom: 4rem;
+    }
+    .project-card .details {
+      margin-top: 2rem;
+      overflow: hidden;
+      padding: 1rem;
+    }
+  }
+  .blog-section {
+    margin-top: .1rem;
+  }
   .blog-section .blog-card {
     margin-bottom: 10px;
   }
@@ -2007,6 +2077,12 @@ input, textarea {
   .skills .section-title p {
     margin-top: .6rem;
     margin-bottom: 1rem;
+  }
+  .skills .skillIcon h4 {
+    font-size: 1.1rem;
+  }
+  .skills .skillIcon h4.smallIcon {
+    font-size: 1rem;
   }
   .btn-custom {
     line-height: 20px;

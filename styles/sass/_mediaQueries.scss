@@ -97,6 +97,10 @@
                     p {
                         margin: 0;
                     }
+
+                    a{
+                        margin-top: .7rem;
+                    }
                 }
             }
         }
@@ -105,7 +109,9 @@
 
     // Portfolio
 
-    .portfolio{
+.portfolio{
+    margin-top: 6rem;
+    padding-top: 70px;
        
 	padding: 0;
 
@@ -116,16 +122,17 @@
 
 }
     .projects {
-        padding: 0;
+        padding-top: 2rem;
     }
     .project-card{
-        overflow: hidden;
+        margin-top: -2rem;
+        // overflow: hidden;
         display: block;
         grid-gap: 0rem;
 
         .image {
-            margin-bottom: 10rem;
-            overflow: hidden;
+            margin-bottom: 12rem;
+            // overflow: hidden;
             padding-top: -2rem;
             h5 {
                 margin-top:-4rem;
@@ -139,16 +146,37 @@
         }
 
         .image-chatbox {
-            margin-bottom: 14rem;
+            margin-bottom: 12rem;
         }
         .details {
             margin-top: 9rem;
-            overflow: hidden;
+            // overflow: hidden;
             padding: 1rem;
+            // height
 
         }
     }
-        
+
+     @-moz-document url-prefix() {
+                .project-card{
+                    .image {
+                        margin-bottom: 12rem;
+                    }
+                    .image-chatbox {
+                        margin-bottom: 4rem;
+                    }
+                    .details {
+                        margin-top: 11rem;
+                        overflow: hidden;
+                        padding: 1rem;
+
+                    }
+                }
+     } 
+     
+     .blog-section{
+         margin-top: -8rem;
+     }
 }
 
 @media screen and (max-width: 780px){
@@ -235,78 +263,79 @@
                     transform: translateY(0);
          }
 
-    // About
-    // .about {         
-    //     .about-details {
-    //         display: flex;
-    //         flex-direction: column;
+     // Portfolio
 
-    //         .about-left {
-    //             width: 100%;
-    //         }
-    //         .about-right {
-    //             margin-top: 1rem;
-    //             width: 100%;
-    //             margin-left: 0rem;
-    //             @include shadow;
-                
-    //             .details {
-    //                 padding: 2rem;
-    //                 position: relative;
-    //                 top: 50%;
-    //                 -webkit-transform: translateY(0);
-    //                 transform: translateY(0);
-                
-                    
-    //                 p {
-    //                     margin: 0;
-    //                 }
-    //             }
-    //         }
-    //     }
-        
-    // }
-
-//     // Portfolio
-
-//     .portfolio{
+.portfolio{
+    margin-top: 6rem;
+    padding-top: 70px;
        
-// 	padding: 0;
+	padding: 0;
 
-//     .section-title p {
-// 		margin-top: .6rem;
-// 		margin-bottom: 1rem;
-// 	}
+    .section-title p {
+		margin-top: .6rem;
+		margin-bottom: 1rem;
+	}
 
-// }
-//     .projects {
-//         padding: 0;
-//     }
-//     .project-card{
-//         overflow: hidden;
-//         display: block;
-//         grid-gap: 0rem;
+}
+    .projects {
+        padding-top: 2rem;
+    }
+    .project-card{
+        margin-top: 1rem;
+        // overflow: hidden;
+        display: block;
+        grid-gap: 0rem;
 
-//         .image {
-//             overflow: hidden;
-//             padding-top: -2rem;
-//             h5 {
-//                 margin-top:-4rem;
-//                 margin-bottom:1rem;
-//             }
+        .image {
+            margin-bottom: 1rem;
+            // overflow: hidden;
+            padding-top: -2rem;
+            h5 {
+                margin-top:-4rem;
+                margin-bottom:1rem;
+            }
 
-//             .chat-box-h5 {
+            .chat-box-h5 {
+                margin-top:-1.5rem;
+                margin-bottom: 1rem;
+            }            
+        }
 
-//                 margin-top:-1.5rem;
-//                 margin-bottom:1rem;
-//             }            
-//         }
-//         .details {
-//             overflow: hidden;
-//             padding: 1rem;
-//         }
-//     }
+        .image-chatbox {
+            margin-bottom: 12rem;
+        }
+        .details {
+            margin-top: 1rem;
+            // overflow: hidden;
+            padding: 1rem;
+            // height
 
+        }
+    }
+
+     @-moz-document url-prefix() {
+                .project-card{
+  
+                    .image {
+                        margin-bottom: 2rem;
+                    }
+                    .image-chatbox {
+                        margin-bottom: 4rem;
+                    }
+                    .details {
+                        margin-top: 2rem;
+                        overflow: hidden;
+                        padding: 1rem;
+
+                    }
+                }
+     } 
+     
+     .blog-section{
+         margin-top: .1rem;
+     }
+
+   
     // BLog
     .blog-section .blog-card {
         margin-bottom:10px;
@@ -346,6 +375,13 @@
         .section-title p {
             margin-top: .6rem;
             margin-bottom: 1rem;
+        }
+
+        .skillIcon h4 {
+          font-size: 1.1rem;
+        }
+        .skillIcon h4.smallIcon {
+          font-size: 1rem;
         }
     }
 
