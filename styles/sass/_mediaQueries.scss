@@ -546,18 +546,32 @@
 
      @-moz-document url-prefix() {
                 .project-card{
-  
+                    min-height: 800px;
+                    margin-bottom: 2rem;
+                    // margin-top: 2rem;
                     .image {
-                        margin-bottom: 2rem;
+                        margin-bottom: -17rem;
                     }
                     .image-chatbox {
                         margin-bottom: 4rem;
                     }
                     .details {
-                        margin-top: 2rem;
+                        margin-top: -25rem;
                         overflow: hidden;
                         padding: 1rem;
+                    }
 
+                    .socialApp-details {
+                        min-height: 100px;
+                        padding-top: 0;
+
+                        // ul>li.features-for-mobile {
+                        //     display: none;
+                        // }
+
+                        h5, ul {
+                            display: none;
+                        }
                     }
                 }
      } 

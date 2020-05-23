@@ -2230,16 +2230,27 @@ input, textarea {
     padding: 1rem;
   }
   @-moz-document url-prefix() {
-    .project-card .image {
+    .project-card {
+      min-height: 800px;
       margin-bottom: 2rem;
+    }
+    .project-card .image {
+      margin-bottom: -17rem;
     }
     .project-card .image-chatbox {
       margin-bottom: 4rem;
     }
     .project-card .details {
-      margin-top: 2rem;
+      margin-top: -25rem;
       overflow: hidden;
       padding: 1rem;
+    }
+    .project-card .socialApp-details {
+      min-height: 100px;
+      padding-top: 0;
+    }
+    .project-card .socialApp-details h5, .project-card .socialApp-details ul {
+      display: none;
     }
   }
   .blog-section {
