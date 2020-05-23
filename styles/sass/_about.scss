@@ -17,7 +17,9 @@
         margin-top: 2rem;
 
         .about-left {
-            width: 35%;
+            width: 40%;
+            min-width: 420px;
+            min-height: 320px;
             @include shadow;
         }
 
@@ -26,7 +28,7 @@
         }
 
         .about-right {
-            width: 65%;
+            width: 60%;
             margin-left: 1rem;
             @include shadow;
             

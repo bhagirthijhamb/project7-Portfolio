@@ -119,13 +119,13 @@
         padding: 0;
     }
     .project-card{
-        // overflow: hidden;
+        overflow: hidden;
         display: block;
         grid-gap: 0rem;
 
         .image {
             margin-bottom: 10rem;
-            // overflow: hidden;
+            overflow: hidden;
             padding-top: -2rem;
             h5 {
                 margin-top:-4rem;
@@ -143,7 +143,7 @@
         }
         .details {
             margin-top: 9rem;
-            // overflow: hidden;
+            overflow: hidden;
             padding: 1rem;
 
         }
@@ -152,8 +152,13 @@
 }
 
 @media screen and (max-width: 780px){
+    
     .home {
         padding-left:10px;
+
+        .contactFloat {
+        display: none;
+    }
     }
     .header-left{
         transform: translateX(-120px);
@@ -347,6 +352,12 @@
     .btn-custom {
     line-height: 20px;
     padding: 9px 15px;
+}
+
+.footer {
+    padding-top: 10px;
+	padding-bottom: 65px;
+
 }
 
 

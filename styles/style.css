@@ -287,7 +287,7 @@ h6 {
 }
 
 p {
-  line-height: 1.3rem;
+  line-height: 1.5;
 }
 
 a {
@@ -1269,7 +1269,9 @@ ul {
 }
 
 .about .about-details .about-left {
-  width: 35%;
+  width: 40%;
+  min-width: 420px;
+  min-height: 320px;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
           box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
@@ -1279,7 +1281,7 @@ ul {
 }
 
 .about .about-details .about-right {
-  width: 65%;
+  width: 60%;
   margin-left: 1rem;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
           box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
@@ -1843,11 +1845,13 @@ input, textarea {
     padding: 0;
   }
   .project-card {
+    overflow: hidden;
     display: block;
     grid-gap: 0rem;
   }
   .project-card .image {
     margin-bottom: 10rem;
+    overflow: hidden;
     padding-top: -2rem;
   }
   .project-card .image h5 {
@@ -1863,6 +1867,7 @@ input, textarea {
   }
   .project-card .details {
     margin-top: 9rem;
+    overflow: hidden;
     padding: 1rem;
   }
 }
@@ -1870,6 +1875,9 @@ input, textarea {
 @media screen and (max-width: 780px) {
   .home {
     padding-left: 10px;
+  }
+  .home .contactFloat {
+    display: none;
   }
   .header-left {
     -webkit-transform: translateX(-120px);
@@ -2003,6 +2011,10 @@ input, textarea {
   .btn-custom {
     line-height: 20px;
     padding: 9px 15px;
+  }
+  .footer {
+    padding-top: 10px;
+    padding-bottom: 65px;
   }
 }
 
