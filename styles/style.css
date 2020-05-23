@@ -2006,11 +2006,13 @@ input, textarea {
   }
   .project-card {
     margin-top: 1rem;
+    overflow: hidden;
     display: block;
     grid-gap: 0rem;
   }
   .project-card .image {
     margin-bottom: 1rem;
+    overflow: hidden;
     padding-top: -2rem;
   }
   .project-card .image h5 {
@@ -2026,6 +2028,7 @@ input, textarea {
   }
   .project-card .details {
     margin-top: 1rem;
+    overflow: hidden;
     padding: 1rem;
   }
   @-moz-document url-prefix() {
@@ -2094,7 +2097,7 @@ input, textarea {
   }
 }
 
-@media screen and (max-width: 515px) {
+@media screen and (max-width: 500px) {
   .home .banner h1 {
     font-size: 2.8rem;
   }
@@ -2163,7 +2166,8 @@ input, textarea {
     top: 54px;
   }
   .section {
-    padding: 40px 5px 0px 5px;
+    margin-top: 2rem;
+    padding: 20px 5px 0px 5px;
   }
   .section-title {
     position: relative;
@@ -2184,8 +2188,61 @@ input, textarea {
   .section-title h2 {
     text-transform: capitalize;
     font-weight: 700;
+    margin-bottom: -2rem;
   }
   .section-title p {
     text-transform: capitalize;
+  }
+  .portfolio {
+    margin-top: 6rem;
+    padding-top: 70px;
+    padding: 0;
+  }
+  .portfolio .section-title p {
+    margin-top: .6rem;
+    margin-bottom: 1rem;
+  }
+  .projects {
+    padding-top: 2rem;
+  }
+  .project-card {
+    margin-top: 1rem;
+    display: block;
+    grid-gap: 0rem;
+  }
+  .project-card .image {
+    margin-bottom: 1rem;
+    padding-top: -2rem;
+  }
+  .project-card .image h5 {
+    margin-top: -4rem;
+    margin-bottom: 1rem;
+  }
+  .project-card .image .chat-box-h5 {
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+  }
+  .project-card .image-chatbox {
+    margin-bottom: 12rem;
+  }
+  .project-card .details {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  @-moz-document url-prefix() {
+    .project-card .image {
+      margin-bottom: 2rem;
+    }
+    .project-card .image-chatbox {
+      margin-bottom: 4rem;
+    }
+    .project-card .details {
+      margin-top: 2rem;
+      overflow: hidden;
+      padding: 1rem;
+    }
+  }
+  .blog-section {
+    margin-top: .1rem;
   }
 }
