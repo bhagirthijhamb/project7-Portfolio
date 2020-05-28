@@ -2,6 +2,9 @@
 		 Home
 ------------------------------ */
 .home{
+	// height: 100%;
+	margin-left:100px;
+	@include ease(0.5);
 	min-width: 350px;
 	height: 100vh;
 	background-color: $bg-light;
@@ -48,7 +51,6 @@
 	}
 	
     .banner{
-		margin-left: 4rem;
         h6{
 			font-weight: $f-w-400;
 			letter-spacing: 1px;
@@ -57,7 +59,7 @@
 		h1 {
 			color: $dark-color-4;
 			font-weight: $f-w-800;
-			font-s	ize: $f-b-h1;
+			font-size: $f-b-h1;
 			margin-left: 3rem;
 			margin-top: 10rem;
 			margin-bottom: 0rem;			

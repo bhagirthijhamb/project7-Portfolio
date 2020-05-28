@@ -955,7 +955,7 @@ a.skip-main:focus {
 
 .main-menu .menu .menu-nav {
   margin: -2px auto 0 auto;
-  margin-left: 18px;
+  margin-right: 5.5rem;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1050,6 +1050,9 @@ a.skip-main:focus {
 		 Home
 ------------------------------ */
 .home {
+  margin-left: 100px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   min-width: 350px;
   height: 100vh;
   background-color: #f8f9fb;
@@ -1088,10 +1091,6 @@ a.skip-main:focus {
   position: absolute;
   top: 13%;
   right: 15%;
-}
-
-.home .banner {
-  margin-left: 4rem;
 }
 
 .home .banner h6 {
