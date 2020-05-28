@@ -826,6 +826,34 @@ ul {
   padding-bottom: 100px !important;
 }
 
+a.skip-main {
+  left: -9   99px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+  background: white;
+  color: black;
+}
+
+a.skip-main:focus {
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow: auto;
+  margin: 0 35%;
+  padding: 5px;
+  font-size: 20px;
+  outline: 3px solid red;
+  text-align: center;
+  z-index: 999;
+  background: yellow;
+  color: red;
+}
+
 /* -----------------------------------
 		    Header Left
 ----------------------------------- */
@@ -1060,6 +1088,10 @@ ul {
   position: absolute;
   top: 13%;
   right: 15%;
+}
+
+.home .banner {
+  margin-left: 4rem;
 }
 
 .home .banner h6 {
