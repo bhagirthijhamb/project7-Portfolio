@@ -1103,7 +1103,7 @@ a.skip-main:focus {
   font-weight: 800;
   font-size: 60px;
   margin-left: 3rem;
-  margin-top: 10rem;
+  margin-top: 9rem;
   margin-bottom: 0rem;
 }
 
@@ -1115,7 +1115,7 @@ a.skip-main:focus {
 }
 
 .home .banner h2 {
-  margin-left: 17rem;
+  margin-left: 12rem;
   margin-top: .5rem;
   text-transform: uppercase;
   font-size: 2.5rem;
@@ -1135,9 +1135,9 @@ a.skip-main:focus {
   content: "Bhagirthi";
   color: rgba(242, 30, 78, 0.1);
   font-weight: 900;
-  font-size: 8rem;
+  font-size: 7rem;
   left: 0px;
-  top: -100px;
+  top: -90px;
   width: 50px;
   height: 50px;
   z-index: -1;
@@ -1154,9 +1154,9 @@ a.skip-main:focus {
   content: "Jhamb";
   color: rgba(242, 30, 78, 0.1);
   font-weight: 900;
-  font-size: 8rem;
+  font-size: 7rem;
   left: 0px;
-  top: -100px;
+  top: -90px;
   width: 50px;
   height: 50px;
   z-index: -1;
@@ -1973,6 +1973,9 @@ input, textarea {
   .header-left .main-menu .menu-nav .nav-link.active:after, .header-left .main-menu .menu-nav .nav-link:hover:after {
     bottom: 0;
   }
+  .home {
+    margin-left: 0;
+  }
   .main {
     margin-left: 0;
   }
@@ -2135,10 +2138,11 @@ input, textarea {
   }
   .home .banner h1 .lineBreak {
     margin-left: 50px;
-    margin-top: 12px;
+    margin-top: 15px;
   }
   .home .banner h2 {
     font-size: 1.5rem;
+    margin-left: .2rem;
   }
   .name-title .name {
     position: relative;

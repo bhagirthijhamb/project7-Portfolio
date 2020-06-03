@@ -221,6 +221,9 @@
 			}
 		}
     }
+     .home{
+       margin-left:0;
+    }
      .main{
        margin-left:0;
     }
@@ -406,11 +409,12 @@
             font-size: 2.8rem;
             & .lineBreak {
 				margin-left: 50px;
-				margin-top: 12px;
+				margin-top: 15px;
 			}
         }
             h2 {	
             font-size: 1.5rem;	
+            margin-left: .2rem;
         }
     }
    

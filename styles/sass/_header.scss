@@ -61,7 +61,7 @@
 			font-weight: $f-w-800;
 			font-size: $f-b-h1;
 			margin-left: 3rem;
-			margin-top: 10rem;
+			margin-top: 9rem;
 			margin-bottom: 0rem;			
 
 			& .lineBreak {
@@ -73,7 +73,7 @@
 		}	
 
 		h2 {
-			margin-left: 17rem;
+			margin-left: 12rem;
 			margin-top: .5rem;
 			text-transform: uppercase;
 			font-size: 2.5rem;
@@ -106,7 +106,7 @@
 	padding-left:15px;
 	z-index: 1;
 	&:after{
-		@include after1(0px,-100px,50px,50px);
+		@include after1(0px,-90px,50px,50px);
 		z-index: -1;
 	}
 }
@@ -116,7 +116,7 @@
 	padding-left:15px;
 	z-index: 1;
 	&:after{
-		@include after2(0px,-100px,50px,50px);
+		@include after2(0px,-90px,50px,50px);
 		z-index: -1;
 	}
 }
