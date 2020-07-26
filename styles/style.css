@@ -1478,6 +1478,41 @@ div.details {
           transform: translateY(-50%);
 }
 
+.more-projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /*no media query required*/
+  grid-column-gap: 1.2rem;
+  grid-row-gap: 1rem;
+  margin-top: -2rem;
+}
+
+.more-projects .project-brick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.more-projects .project-brick a {
+  margin-bottom: 0;
+}
+
+.more-projects .project-brick h4 {
+  margin-top: -3rem;
+}
+
 /* ---------------------------------
 		Blog 
 --------------------------------- */
@@ -1488,8 +1523,8 @@ div.details {
 }
 
 .blog-section .section-title p {
-  margin-top: .6rem;
-  margin-bottom: 1rem;
+  margin-top: .5rem;
+  margin-bottom: 3rem;
 }
 
 .blog-section p a {
@@ -1515,12 +1550,12 @@ div.details {
 
 .blog-section .blog-card {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .blog-section .blog-card .content {
   position: relative;
-  margin: -100px 20px auto 20px;
+  margin: -30px 20px auto 20px;
   line-height: 24px;
   padding: 30px 20px;
   border-radius: 5px;
@@ -1600,7 +1635,7 @@ div.details {
 }
 
 .skillIcon h4 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 600px) {
