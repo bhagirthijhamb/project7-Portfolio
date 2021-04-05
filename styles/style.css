@@ -1116,7 +1116,7 @@ a.skip-main:focus {
 
 .home .banner h2 {
   margin-left: 12rem;
-  margin-top: .5rem;
+  margin-top: 4rem;
   text-transform: uppercase;
   font-size: 2.5rem;
   font-weight: 700;
@@ -2177,7 +2177,7 @@ input, textarea {
   }
   .home .banner h2 {
     font-size: 1.5rem;
-    margin-left: .2rem;
+    margin-left: 2rem;
   }
   .name-title .name {
     position: relative;
