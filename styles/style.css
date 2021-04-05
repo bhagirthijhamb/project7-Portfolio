@@ -1482,7 +1482,7 @@ div.details {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   /*no media query required*/
   grid-column-gap: 1.2rem;
   grid-row-gap: 1rem;
@@ -1542,9 +1542,9 @@ div.details {
   /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   /* grid-template-columns: repeat(4, 1fr)); */
   -ms-grid-columns: (minmax(310px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   /*no media query required*/
-  grid-column-gap: .75rem;
+  grid-column-gap: 5rem;
   grid-row-gap: 1rem;
 }
 
